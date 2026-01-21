@@ -1,0 +1,62 @@
+# --- Python & Virtual Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+venv/
+env/
+.venv/
+
+# --- Environment Variables & Secrets (CRITICAL) ---
+.env
+.env.local
+*.pem
+*.key
+
+# --- Data Files (Prevent large uploads) ---
+# We generally don't want to commit the actual data, just the code.
+*.csv
+*.parquet
+*.json
+*.avro
+*.orc
+# If you create a specific data folder, ignore its contents
+data/
+downloads/
+
+# --- IDE & OS Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Airflow ---
+# We want to commit DAGs, but NOT logs or local DBs
+airflow/logs/
+airflow/*.pid
+airflow/*.err
+airflow/*.log
+# If you run Airflow locally without Docker, it creates these:
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# --- dbt (Data Build Tool) ---
+dbt_packages/
+target/
+dbt_modules/
+
+# --- Spark / Java ---
+metastore_db/
+derby.log
+warehouse/
+
+# --- Terraform ---
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/

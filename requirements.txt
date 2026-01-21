@@ -1,0 +1,24 @@
+# --- Phase 1: Foundations & Database ---
+psycopg2-binary>=2.9.0      # PostgreSQL adapter
+sqlalchemy>=2.0.0           # SQL Toolkit and ORM
+python-dotenv>=1.0.0        # Managing environment variables
+
+# --- Phase 2: ETL Pipelines ---
+requests>=2.31.0            # HTTP library for API extraction
+pandas>=2.0.0               # Data manipulation
+pyarrow>=12.0.0             # Engine for Parquet files
+fastparquet>=2023.0.0       # Alternative Parquet engine
+pydantic>=2.0.0             # Data validation and settings management
+
+# --- Phase 3: Big Data & Cloud ---
+pyspark>=3.4.0              # Apache Spark interface for Python
+boto3>=1.26.0               # AWS SDK (for S3 and Minio interactions)
+
+# --- Phase 4: Advanced & Streaming ---
+dbt-postgres>=1.5.0         # Data Build Tool for transformation
+kafka-python>=2.0.0         # Kafka client
+pytest>=7.0.0               # Testing framework (for CI/CD)
+
+# --- Development Tools ---
+jupyter>=1.0.0              # Interactive notebooks (great for prototyping)
+black>=23.0.0               # Code formatter
