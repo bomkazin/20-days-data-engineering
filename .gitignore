@@ -16,6 +16,7 @@ env/
 
 # --- Data Files (Prevent large uploads) ---
 # We generally don't want to commit the actual data, just the code.
+*.log
 *.csv
 *.parquet
 *.json
